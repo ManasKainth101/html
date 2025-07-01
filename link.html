@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html links</title>
+</head>
+<body>
+    <style>
+        html,body,p,div,a,span {
+            margin:0;
+            padding:0;
+        }
+        .container {
+            
+        }
+        nav {
+            text-align: center;
+        }
+        .navbar {
+            list-style: none;            
+            margin: 0 auto;
+        }
+        .navbar li {
+            display: inline;
+            padding: 0 50px;
+        }
+    </style>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="div.html">Divs</a></li>
+            <li><a href="inline_block.html">Inline Blocks</a></li>
+            <li><a href="images.html">Images</a></li>
+        </ul>
+    </nav>
+    <p style="border:2px solid black;">This is a paragraph</p>
+    <p style="border:2px solid blue;"> This is also a paragraph.</p>
+    <!-- Paragraph tags are block elemts which means that they will cover the whole area -->
+    <span style="border:2px solid red;">This is a span.</span>
+    <span style="border:2px solid rgb(240, 135, 153);">This is also a span.</span>
+    <!-- span is an inline element which will cover the area where there is some content  -->
+    <hr>
+    <div style="border:2px solid red;">This is a div</div>
+    <div style="border:2px solid blue;">This is also a div</div>
+    <a href="https://youtube.com/@skysetu?si=BUxkrnL1GdhtH9tN">Youtube Channel</a>
+    <hr>
+    <a href="https://www.w3schools.com/html/" title="W3 Schools Website">Learn html</a>
+    <hr>
+    <a href="https://www.w3schools.com/html/" target="_blank">Visit html web</a>
+    <a href="https://youtube.com/@skysetu?si=BUxkrnL1GdhtH9tN">
+        <img style="float:left;" width="200" src="images/favicon.jpg" alt="logo">
+    </a>
+    <!-- In this we have used the "_blank" value which will open the link in another tab -->
+</body>
+</html>
