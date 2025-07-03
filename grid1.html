@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            font-family: sans-serif;
+        }
+        .container {
+            margin:auto;
+            max-width:1370px;
+            display:grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas:
+            "header header" 
+            "sidebar content"
+            "footer footer";
+        }
+        .header {
+            background-color:aquamarine;
+            padding:10px;
+            grid-area: header;
+            
+        }
+        .sidebar {
+            background-color: chartreuse;
+            padding:10px;
+            grid-area:sidebar;
+        }
+        .content {
+            background-color: coral;
+            padding:10px;
+            grid-area:content;
+        }
+        .footer {
+            background-color:rgb(170, 41, 234);
+            padding:10px;
+            grid-area:footer;
+        }
+
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+    
+</body>
+</html>

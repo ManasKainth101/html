@@ -3,16 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flex</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .container {
+            display:flex;
+            width:1700px;
+            margin:auto;
+            height:200px;
+            background-color:aliceblue;
+            border: 2px solid black;
+            flex-wrap:wrap;
+            flex-direction:row;
+            justify-content: space-around;
+
+
+        }
+        .item1 {
+            border:2px solid blue;
+            height:10px;
+            padding:10px;
+            
+            margin:10px;
+            
+            background-color: pink;
+        }
+    </style>
+
 </head>
 <body>
-    <h2>Places I Want To Visit</h2>
-    <dl>
-        <dt>Ladakh</dt>
-        <dd>This Place Is Actually Good For Astrophotgraphy</dd>
-        <dt>North Pole</dt>
-        <!-- dt refers to description term -->
-        <dd>I like cold places</dd>
-    </dl>
+    <h2>Flex Box</h2><br>
+    <div class="container">
+        <div class="item1">item1</div>
+        <div class="item1">item2</div>
+        <div class="item1">item3</div>
+    </div>
+    
 </body>
 </html>

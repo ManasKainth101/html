@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .container {
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            grid-template-columns: 200px 200px 200px;
+            /* grid-template-rows: 100px 250px 100px; */
+            /* grid-template-rows: repeat(4,200px); */
+            max-width:1320px;
+            height:500px;
+            /* justify-content: space-around; it aligns the content horizontally */
+            /* justify-content: space-between; */
+            justify-content: center;
+            /* align-content: center;  it aligns the content vertically; */
+            /* align-content: space-around; */
+            /* align-content: space-between; */
+            /* align-content: start; */
+            /* align-content: end; */
+            /* justify-items: start; JUSTIFY-ITEMS align the cell horizontally */
+            /* justify-items: start; */
+            /* align-items:start;  ALIGN-ITEMS align the cell vertically */
+            /* align-items: end; */
+            /* align-items: center; */
+            margin:auto;
+            border:1px solid black;
+            gap: 20px;
+        }
+        .box {
+            border: 2px solid blue;
+            padding:10px;
+        }
+        .box1 {
+             grid-column: span 2;
+           /* grid-row-start: 1;
+            grid-row-end:4; */
+            grid-row: span 3;
+        }
+       
+    </style>
+</head>
+<body>
+    <br>
+    <div class="container">
+        <div class="box box1">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+        <div class="box">Box6</div>
+        <div class="box">Box7</div>
+        <div class="box">Box8</div>
+        <div class="box">Box9</div>
+        <div class="box">Box10</div>
+    </div>
+    
+</body>
+</html>
